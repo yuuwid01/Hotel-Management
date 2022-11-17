@@ -1,8 +1,6 @@
 
 // Class Entitas
-public class Staff {
-    String nama;
-    String nip;
+public class Staff extends Penduduk {
     String password;
 
     public Staff() {

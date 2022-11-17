@@ -4,7 +4,6 @@ import java.util.ArrayList;
 public class Hotel {
     public static ArrayList<Kamar> daftarKamar = new ArrayList<>();
     public static ArrayList<Staff> daftarStaff = new ArrayList<>();
-    public static ArrayList<Tamu> daftarTamu = new ArrayList<>();
 
     public static ArrayList<Reservasi> daftarReservasi = new ArrayList<>();
 

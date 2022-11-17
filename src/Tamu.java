@@ -1,8 +1,6 @@
 
 // Class Entitas
-public class Tamu {
-    String nik;
-    String nama;
+public class Tamu extends Penduduk {
     String alamat;
     String noTelp;
 
