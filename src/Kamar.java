@@ -26,4 +26,8 @@ public class Kamar {
         System.out.println("Status          : " + status);
     }
 
+    public void setStatus(boolean status) {
+        this.status = status;
+    }
+
 }

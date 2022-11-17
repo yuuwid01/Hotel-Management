@@ -27,4 +27,11 @@ public class Reservasi {
         System.out.println("Tanggal CheckOut: " + tanggalCheckOut);
     }
 
+    public void setTanggalCheckIn(String tanggalCheckIn) {
+        this.tanggalCheckIn = tanggalCheckIn;
+    }
+
+    public void setTanggalCheckOut(String tanggalCheckOut) {
+        this.tanggalCheckOut = tanggalCheckOut;
+    }
 }
