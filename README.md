@@ -1,18 +1,12 @@
-## Getting Started
+## Studi Kasus
+Hotel Management
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Praktikum PBO 22
 
-## Folder Structure
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Progress
+- [Progress 2](https://github.com/yuuwid01/Hotel-Management/tree/dfc19a3b3759df1b8f5d7eea4763ec44dd6dc556)
+- [Progress 3](https://github.com/yuuwid01/Hotel-Management/tree/05a56b59d54d1e7b4712fdc9d09443e5d1735a4a)
+- [Progress 5](https://github.com/yuuwid01/Hotel-Management/tree/dc02887c59f817dc2d6e92429316fd1838804873)
+- [Progress 6](https://github.com/yuuwid01/Hotel-Management/tree/c8d32100977a8823b7c8242cbf5107fbb5e0612e)
+- [Progress 7](https://github.com/yuuwid01/Hotel-Management/tree/1c44091fc38dee74b2fd3ff14bc8a5b64bc92602)
