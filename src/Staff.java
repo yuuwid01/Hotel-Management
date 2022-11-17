@@ -5,6 +5,9 @@ public class Staff {
     String nip;
     String password;
 
+    public Staff() {
+    }
+
     // Constructor dengan Parameter
     public Staff(String nama, String nip, String password) {
         this.nama = nama;
