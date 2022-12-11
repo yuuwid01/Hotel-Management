@@ -1,11 +1,14 @@
+package entity;
+
+import utils.DateString;
 
 // Class Entitas
 public class Reservasi {
-    Tamu tamu;
-    Kamar kamar;
-    int malam;
-    String tanggalCheckIn;
-    String tanggalCheckOut;
+    private Tamu tamu;
+    private Kamar kamar;
+    private int malam;
+    private String tanggalCheckIn;
+    private String tanggalCheckOut;
 
     public Reservasi() {
     }
@@ -34,4 +37,37 @@ public class Reservasi {
     public void setTanggalCheckOut(String tanggalCheckOut) {
         this.tanggalCheckOut = tanggalCheckOut;
     }
+
+    public Tamu getTamu() {
+        return tamu;
+    }
+
+    public void setTamu(Tamu tamu) {
+        this.tamu = tamu;
+    }
+
+    public Kamar getKamar() {
+        return kamar;
+    }
+
+    public void setKamar(Kamar kamar) {
+        this.kamar = kamar;
+    }
+
+    public int getMalam() {
+        return malam;
+    }
+
+    public void setMalam(int malam) {
+        this.malam = malam;
+    }
+
+    public String getTanggalCheckIn() {
+        return tanggalCheckIn;
+    }
+
+    public String getTanggalCheckOut() {
+        return tanggalCheckOut;
+    }
+
 }

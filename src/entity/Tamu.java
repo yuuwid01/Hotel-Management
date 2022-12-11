@@ -1,8 +1,9 @@
+package entity;
 
 // Class Entitas
 public class Tamu extends Penduduk {
-    String alamat;
-    String noTelp;
+    private String alamat;
+    private String noTelp;
 
     public Tamu() {
     }
@@ -21,6 +22,22 @@ public class Tamu extends Penduduk {
         System.out.println("NIK Tamu        : " + nik);
         System.out.println("Alamat          : " + alamat);
         System.out.println("No Telp         : " + noTelp);
+    }
+
+    public String getAlamat() {
+        return alamat;
+    }
+
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
+    }
+
+    public String getNoTelp() {
+        return noTelp;
+    }
+
+    public void setNoTelp(String noTelp) {
+        this.noTelp = noTelp;
     }
 
 }

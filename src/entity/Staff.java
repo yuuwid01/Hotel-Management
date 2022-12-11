@@ -1,7 +1,8 @@
+package entity;
 
 // Class Entitas
 public class Staff extends Penduduk {
-    String password;
+    private String password;
 
     public Staff() {
     }
@@ -19,4 +20,13 @@ public class Staff extends Penduduk {
         System.out.println("NIP Staff       : " + nip);
         System.out.println("Password        : " + password);
     }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
 }

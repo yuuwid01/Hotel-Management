@@ -1,10 +1,11 @@
+package entity;
 
 // Class Entitas
 public class Kamar {
-    String kodeKamar;
-    String jenisKamar;
-    int hargaPerMalam;
-    boolean status;
+    private String kodeKamar;
+    private String jenisKamar;
+    private int hargaPerMalam;
+    private boolean status;
 
     public Kamar() {
     }
@@ -24,6 +25,34 @@ public class Kamar {
         System.out.println("Jenis Kamar     : " + jenisKamar);
         System.out.println("Harga Per Malam : " + hargaPerMalam);
         System.out.println("Status          : " + status);
+    }
+
+    public String getKodeKamar() {
+        return kodeKamar;
+    }
+
+    public void setKodeKamar(String kodeKamar) {
+        this.kodeKamar = kodeKamar;
+    }
+
+    public String getJenisKamar() {
+        return jenisKamar;
+    }
+
+    public void setJenisKamar(String jenisKamar) {
+        this.jenisKamar = jenisKamar;
+    }
+
+    public int getHargaPerMalam() {
+        return hargaPerMalam;
+    }
+
+    public void setHargaPerMalam(int hargaPerMalam) {
+        this.hargaPerMalam = hargaPerMalam;
+    }
+
+    public boolean isStatus() {
+        return status;
     }
 
     public void setStatus(boolean status) {

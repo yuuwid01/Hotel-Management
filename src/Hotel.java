@@ -1,5 +1,11 @@
 import java.util.ArrayList;
 
+import entity.Kamar;
+import entity.Reservasi;
+import entity.Staff;
+import entity.Tamu;
+import utils.DateString;
+
 // Class Inti (Core)
 public class Hotel {
     public static ArrayList<Kamar> daftarKamar = new ArrayList<>();
@@ -21,7 +27,7 @@ public class Hotel {
 
     public static Kamar cariKamar(String kode) {
         for (Kamar kamar : daftarKamar) {
-            if (kamar.kodeKamar.equals(kode)) {
+            if (kamar.getKodeKamar().equals(kode)) {
                 return kamar;
             }
         }
@@ -30,7 +36,7 @@ public class Hotel {
 
     private static void updateStatusKamar(Kamar kamar, boolean status) {
         for (Kamar kamar2 : daftarKamar) {
-            if (kamar.kodeKamar.equals(kamar2.kodeKamar)) {
+            if (kamar.getKodeKamar().equals(kamar2.getKodeKamar())) {
                 kamar2.setStatus(status);
                 break;
             }
@@ -49,8 +55,8 @@ public class Hotel {
         int i = -1;
         for (Reservasi reservasi : daftarReservasi) {
             i += 1;
-            if (reservasi.kamar.kodeKamar.equals(kodeKamar)) {
-                if (!reservasi.kamar.status) {
+            if (reservasi.getKamar().getKodeKamar().equals(kodeKamar)) {
+                if (!reservasi.getKamar().isStatus()) {
                     return i;
                 }
             }
@@ -61,7 +67,7 @@ public class Hotel {
     public static void checkOut(int indexReservasi) {
         Reservasi reservasi = daftarReservasi.get(indexReservasi);
         reservasi.setTanggalCheckOut(DateString.now());
-        Kamar kamar = reservasi.kamar;
+        Kamar kamar = reservasi.getKamar();
         updateStatusKamar(kamar, true);
 
         daftarReservasi.set(indexReservasi, reservasi);

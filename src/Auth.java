@@ -1,3 +1,4 @@
+import entity.Staff;
 
 // Class Inti (Core)
 public class Auth {
@@ -10,7 +11,7 @@ public class Auth {
     public static boolean login(String nip, String password) {
 
         for (Staff staff : Hotel.daftarStaff) {
-            if ((staff.nip.equals(nip)) && (staff.password.equals(password))) {
+            if ((staff.getNip().equals(nip)) && (staff.getPassword().equals(password))) {
                 staffLogged = staff;
                 return true;
             }

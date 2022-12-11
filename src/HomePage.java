@@ -1,6 +1,10 @@
 
 import java.util.Scanner;
 
+import entity.Kamar;
+import entity.Reservasi;
+import entity.Tamu;
+
 public class HomePage {
     private Scanner scanner = new Scanner(System.in);
 
@@ -87,12 +91,12 @@ public class HomePage {
             kamar = Hotel.cariKamar(kodeKamar);
 
             if (kamar != null) {
-                if (kamar.status) {
+                if (kamar.isStatus()) {
                     char pilihKamarIni = 'n';
 
-                    System.out.println("    Kode Kamar      : " + kamar.kodeKamar);
-                    System.out.println("    Jenis Kamar     : " + kamar.jenisKamar);
-                    System.out.println("    Harga Permalam  : " + kamar.hargaPerMalam);
+                    System.out.println("    Kode Kamar      : " + kamar.getKodeKamar());
+                    System.out.println("    Jenis Kamar     : " + kamar.getJenisKamar());
+                    System.out.println("    Harga Permalam  : " + kamar.getHargaPerMalam());
 
                     System.out.print("  Pilih Kamar ini (y/n) : ");
                     pilihKamarIni = scanner.nextLine().charAt(0);
@@ -135,16 +139,16 @@ public class HomePage {
     private void daftarReservasi() {
         for (Reservasi reservasi : Hotel.daftarReservasi) {
             System.out.println("==============================================");
-            System.out.println("Kode Kamar      : " + reservasi.kamar.kodeKamar);
-            System.out.println("Jenis Kamar     : " + reservasi.kamar.jenisKamar);
+            System.out.println("Kode Kamar      : " + reservasi.getKamar().getKodeKamar());
+            System.out.println("Jenis Kamar     : " + reservasi.getKamar().getJenisKamar());
             System.out.println("----------------------------------------------");
-            System.out.println("NIK Tamu        : " + reservasi.tamu.nik);
-            System.out.println("Nama Tamu       : " + reservasi.tamu.nama);
-            System.out.println("No Telp Tamu    : " + reservasi.tamu.noTelp);
+            System.out.println("NIK Tamu        : " + reservasi.getTamu().getNik());
+            System.out.println("Nama Tamu       : " + reservasi.getTamu().getNama());
+            System.out.println("No Telp Tamu    : " + reservasi.getTamu().getNoTelp());
             System.out.println("----------------------------------------------");
-            System.out.println("Tanggal CheckIn : " + reservasi.tanggalCheckIn);
-            System.out.println("Malam           : " + reservasi.malam);
-            System.out.println("Tanggal CheckOut: " + reservasi.tanggalCheckOut);
+            System.out.println("Tanggal CheckIn : " + reservasi.getTanggalCheckIn());
+            System.out.println("Malam           : " + reservasi.getMalam());
+            System.out.println("Tanggal CheckOut: " + reservasi.getTanggalCheckIn());
             System.out.println("==============================================");
         }
     }
